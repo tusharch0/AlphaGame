@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>The Flood (Game)</title>
+    <!-- Game font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+
+    <!-- Play font -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&display=swap" rel="stylesheet">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js"></script>
+    <script src="classes/hole.js"></script>
+    <script src="classes/rain.js"></script>
+    <script src="classes/lightning.js"></script>
+    <script src="classes/cloud.js"></script>
+    <script src="classes/fish.js"></script>
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="page menu">
+        <h1>Dam Savers</h1>
+        <div class="left">High score: <span class="high-score">0</span></div>
+        <button class="btn btn-play">Play</button>
+        <button class="btn btn-how">How</button>
+    </div>
+
+    <div class="page help hide">
+        <h1>How to play</h1>
+        <div>
+            It has been one of the worst storms of the year. The old dam has slowly been leaking and now with this new
+            water stress, it is up to you, the repair manager to save the town from flooding! Click to patch up the
+            holes, and DON'T let the water rise up above the fill line! Good luck!
+        </div>
+        <button class="btn btn-play">Play</button>
+    </div>
+
+    <div class="page lose hide">
+        <h1>You lost!</h1>
+        <div class="new-high-score hide">New High Score!</div>
+        <div class="left">Score: <span class="score">0</span></div>
+        <button class="btn btn-restart">Retry</button>
+    </div>
+
+    <!-- UI -->
+    <script src="ui.js"></script>
+
+    <!-- Game -->
+    <script src="script.js"></script>
+</body>
+
+</html>
